@@ -1,0 +1,61 @@
+{% block session %}{% endblock %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}GSB{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/bootstrap-grid.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/bootstrap-reboot.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/gsb.css') }}" rel="stylesheet" />
+            <!-- link href="{{ asset('css/style.css') }}" rel="stylesheet" /-->
+         {% endblock %}
+
+        {% block icnon %}<link rel="icon" type="image/x-icon" href="{{ asset('img/image.jpeg') }}" />{% endblock %}
+    </head>
+    <body>
+    {% block menu %}
+        <center>
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('img/image.jpeg') }}"  >
+            </a>
+        </center>
+        <br/>
+    {% endblock %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}INVENTAIRE{% endblock %}</title>
+       
+        {% block stylesheets %}
+
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/bootstrap-grid.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/bootstrap-reboot.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/gsb.css') }}" rel="stylesheet" />
+        <link href="{{ asset('js/pooper.min.js') }}" rel="stylesheet" />
+        <link href="{{ asset('js/bootstrap.min.js') }}" rel="stylesheet" />
+        <link href="{{ asset('js/jquery-1.11.2.js') }}" rel="stylesheet" />            
+        <link href="{{ asset('css/gsb.css') }}" rel="stylesheet" >  
+       
+        {% endblock %}
+
+   {% block icnon %}<link rel="icon" type="image/x-icon" href="{{ asset('img/image.jpeg') }}" />
+   {% endblock %}
+    </head>
+    <body>
+    {% block menu %} {% endblock %}
+    {% block nav %} {% endblock %}
+    {% block body %} {% endblock %}
+    {% block javascripts %} {% endblock %}
+    </body>
+</html>
